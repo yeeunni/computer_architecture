@@ -1,0 +1,107 @@
+001111_00000_00010_0001_0010_0011_0100//lui $0 $2 0x1234
+001101_00010_00011_0101_0110_0111_1000//ori $2 $3 0x5678
+001111_00000_00100_0001_0001_0010_0010 //lui $0 $4 0x1122
+001101_00100_00101_0011_0011_0100_0100 //ori $4 $5 0x3344
+000000_00000_00101_00001_00010_000000 //sll (state=0x0a) $d = $t << a
+000000_00000_00011_00111_00011_000000 //sll (state=0x0a) $d = $t << a
+
+000000_00011_00101_00001_00000_100001//addu(state=0x02)$1=$3+$5
+000000_00011_00101_00111_00000_100101 //or(state=0x04) $7 = $3 | $5
+001001_00011_10101_00011_00101_000011//addiu(state=0x06) $15 = $3 + SE(i)
+001110_00011_00111_10011_00101_111111//xori(state=0x08)  $7 = $3 ^ ZE(i)
+
+001111_00000_00010_1000_0000_0000_0000   
+001101_00010_00011_0000_0000_0000_0001  //$3에 0x80000001저장
+001111_00000_00100_1001_0001_0010_0010
+001101_00100_00101_0011_0011_0100_0100 //$5에 0x91223344
+
+000000_00011_00101_00001_00000_100001//addu(state=0x02)$1=$3+$5
+000000_00011_00101_00111_00000_100101 //or(state=0x04) $7 = $3 | $5
+001001_00011_10101_00011_00101_000011//addiu(state=0x06) $15 = $3 + SE(i)
+001110_00011_00111_10011_00101_111111//xori(state=0x08)  $7 = $3 ^ ZE(i)
+
+000000_00011_00101_11001_00001_000111 //srav(state=0x0c) $d = $t >>> $s
+101001_00011_00101_00000_00000_011111 //sh MEM[$s+i]:2 = LH($t) (state=0x0e)
+100001_00011_00101_00000_00000_011111 //lh  $t = SE (MEM [$s + i]:2) ->i type(state=0x10)
+000001_00101_00000_00000_00000_000001 //bltz if ($s < 0) pc += i << 2(state=0x13)
+//000001_00101_00000_00000_00000_000011 //bltz if ($s < 0) pc += i << 2(state=0x13)
+000011_00011_00101_00011_00101_000011 //jal(0x14)
+001001_00011_10101_00011_00101_000011//addiu(state=0x06) $15 = $3 + SE(i)  
+
+001111_00000_00010_0000_0000_0000_0000   
+001101_00010_00011_0000_0000_0000_0100  //$3에 0x00000004저장
+001111_00000_00100_0011_0011_0100_0100
+001101_00100_00101_1001_0001_0010_0010 //$5에 0x33449122
+
+000000_00011_00101_11001_00001_000111 //srav(state=0x0c) $d = $t >>> $s
+101001_00011_00101_00000_00000_011111 //sh MEM[$s+i]:2 = LH($t) (state=0x0e)
+100001_00011_00101_00000_00000_011111 //lh  $t = SE (MEM [$s + i]:2) ->i type(state=0x10)
+000011_10000_10001_00111_00101_000011 //jal(0x14)
+00000000_00000000_00000000_00001101//break
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx

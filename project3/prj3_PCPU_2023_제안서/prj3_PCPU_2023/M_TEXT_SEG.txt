@@ -1,0 +1,256 @@
+00111100_00000110_00000000_00000000  //  0x000   main:   lui    $6,0x0          
+00000000_00000000_00000000_00000000  //  0x004           nop                    
+00000000_00000000_00000000_00000000  //  0x008           nop                    
+00000000_00000000_00000000_00000000  //  0x00C           nop                    
+00000000_00000000_00000000_00000000  //  0x010           nop                    
+00110100_11000110_00000000_00000000  //  0x014           ori    $6,$6,0x2000    
+00000000_00000000_00000000_00000000  //  0x018           nop                    
+00000000_00000000_00000000_00000000  //  0x01C           nop                    
+00000000_00000000_00000000_00000000  //  0x020           nop                    
+00000000_00000000_00000000_00000000  //  0x024           nop                    
+00100000_00000010_00000000_00010000  //  0x028           addi    $2,$0,0x10     
+00000000_00000000_00000000_00000000  //  0x02C           nop                    
+00000000_00000000_00000000_00000000  //  0x030           nop                    
+00000000_00000000_00000000_00000000  //  0x034           nop                    
+00000000_00000000_00000000_00000000  //  0x038           nop                    
+00100000_00000011_00000000_00000000  //  0x03C           addi    $3,$0,0        
+00000000_00000000_00000000_00000000  //  0x040           nop                    
+00000000_00000000_00000000_00000000  //  0x044           nop                    
+00000000_00000000_00000000_00000000  //  0x048           nop                    
+00000000_00000000_00000000_00000000  //  0x04C           nop                    
+00000100_00000001_00000000_01100011  //  0x050           b      L2              
+00000000_00000000_00000000_00000000  //  0x054           nop                    
+00000000_00000000_00000000_00000000  //  0x058           nop                    
+00000000_00000000_00000000_00000000  //  0x05C           nop                    
+00000000_00000000_00000000_00000000  //  0x060           nop                    
+00000000_01000011_00100000_00100010  //  0x064   L6:     sub     $4,$2,$3       
+00000000_00000000_00000000_00000000  //  0x068           nop                    
+00000000_00000000_00000000_00000000  //  0x06C           nop                    
+00000000_00000000_00000000_00000000  //  0x070           nop                    
+00000000_00000000_00000000_00000000  //  0x074           nop                    
+00100100_10000100_11111111_11111111  //  0x078           addiu   $4,$4,-1       
+00000000_00000000_00000000_00000000  //  0x07C           nop                    
+00000000_00000000_00000000_00000000  //  0x080           nop                    
+00000000_00000000_00000000_00000000  //  0x084           nop                    
+00000000_00000000_00000000_00000000  //  0x088           nop                    
+00100000_00000101_00000000_00000000  //  0x08C           addi    $5,$0,0        
+00000000_00000000_00000000_00000000  //  0x090           nop                    
+00000000_00000000_00000000_00000000  //  0x094           nop                    
+00000000_00000000_00000000_00000000  //  0x098           nop                    
+00000000_00000000_00000000_00000000  //  0x09C           nop                    
+00010000_00000000_00000000_01000000  //  0x0A0           beq     $0,$0, L3      
+00000000_00000000_00000000_00000000  //  0x0A4           nop                    
+00000000_00000000_00000000_00000000  //  0x0A8           nop                    
+00000000_00000000_00000000_00000000  //  0x0AC           nop                    
+00000000_00000000_00000000_00000000  //  0x0B0           nop                    
+00000000_00000101_00111000_10000000  //  0x0B4   L5:     sll     $7,$5,2        
+00000000_00000000_00000000_00000000  //  0x0B8           nop                    
+00000000_00000000_00000000_00000000  //  0x0BC           nop                    
+00000000_00000000_00000000_00000000  //  0x0C0           nop                    
+00000000_00000000_00000000_00000000  //  0x0C4           nop                    
+00000000_11000111_00111000_00100001  //  0x0C8           addu    $7,$6,$7       
+00000000_00000000_00000000_00000000  //  0x0CC           nop                    
+00000000_00000000_00000000_00000000  //  0x0D0           nop                    
+00000000_00000000_00000000_00000000  //  0x0D4           nop                    
+00000000_00000000_00000000_00000000  //  0x0D8           nop                    
+10001100_11101000_00000000_00000000  //  0x0DC           lw      $8,0($7)       
+00000000_00000000_00000000_00000000  //  0x0E0           nop                    
+00000000_00000000_00000000_00000000  //  0x0E4           nop                    
+00000000_00000000_00000000_00000000  //  0x0E8           nop                    
+00000000_00000000_00000000_00000000  //  0x0EC           nop                    
+10001100_11101001_00000000_00000100  //  0x0F0           lw      $9,4($7)       
+00000000_00000000_00000000_00000000  //  0x0F4           nop                    
+00000000_00000000_00000000_00000000  //  0x0F8           nop                    
+00000000_00000000_00000000_00000000  //  0x0FC           nop                    
+00000000_00000000_00000000_00000000  //  0x100           nop                    
+00000001_00001001_00001000_00101010  //  0x104           slt     $1,$8,$9       
+00000000_00000000_00000000_00000000  //  0x108           nop                    
+00000000_00000000_00000000_00000000  //  0x10C           nop                    
+00000000_00000000_00000000_00000000  //  0x110           nop                    
+00000000_00000000_00000000_00000000  //  0x114           nop                    
+00010100_00100000_00000000_00011101  //  0x118           bne     $1,$0,L4       
+00000000_00000000_00000000_00000000  //  0x11C           nop                    
+00000000_00000000_00000000_00000000  //  0x120           nop                    
+00000000_00000000_00000000_00000000  //  0x124           nop                    
+00000000_00000000_00000000_00000000  //  0x128           nop                    
+00000001_00000000_01010000_00100000  //  0x12C           add     $10,$8,$0      
+00000000_00000000_00000000_00000000  //  0x130           nop                    
+00000000_00000000_00000000_00000000  //  0x134           nop                    
+00000000_00000000_00000000_00000000  //  0x138           nop                    
+00000000_00000000_00000000_00000000  //  0x13C           nop                    
+00000001_00100000_01000000_00100000  //  0x140           add     $8,$9,$0       
+00000000_00000000_00000000_00000000  //  0x144           nop                    
+00000000_00000000_00000000_00000000  //  0x148           nop                    
+00000000_00000000_00000000_00000000  //  0x14C           nop                    
+00000000_00000000_00000000_00000000  //  0x150           nop                    
+00000001_01000000_01001000_00100000  //  0x154           add     $9,$10,$0      
+00000000_00000000_00000000_00000000  //  0x158           nop                    
+00000000_00000000_00000000_00000000  //  0x15C           nop                    
+00000000_00000000_00000000_00000000  //  0x160           nop                    
+00000000_00000000_00000000_00000000  //  0x164           nop                    
+10101100_11101000_00000000_00000000  //  0x168           sw      $8,0($7)       
+00000000_00000000_00000000_00000000  //  0x16C           nop                    
+00000000_00000000_00000000_00000000  //  0x170           nop                    
+00000000_00000000_00000000_00000000  //  0x174           nop                    
+00000000_00000000_00000000_00000000  //  0x178           nop                    
+10101100_11101001_00000000_00000100  //  0x17C           sw      $9,4($7)       
+00000000_00000000_00000000_00000000  //  0x180           nop                    
+00000000_00000000_00000000_00000000  //  0x184           nop                    
+00000000_00000000_00000000_00000000  //  0x188           nop                    
+00000000_00000000_00000000_00000000  //  0x18C           nop                    
+00100100_10100101_00000000_00000001  //  0x190   L4:     addiu   $5,$5,1        
+00000000_00000000_00000000_00000000  //  0x194           nop                    
+00000000_00000000_00000000_00000000  //  0x198           nop                    
+00000000_00000000_00000000_00000000  //  0x19C           nop                    
+00000000_00000000_00000000_00000000  //  0x1A0           nop                    
+00000000_10100100_00001000_00101010  //  0x1A4   L3:     slt     $1,$5,$4       
+00000000_00000000_00000000_00000000  //  0x1A8           nop                    
+00000000_00000000_00000000_00000000  //  0x1AC           nop                    
+00000000_00000000_00000000_00000000  //  0x1B0           nop                    
+00000000_00000000_00000000_00000000  //  0x1B4           nop                    
+00010100_00100000_11111111_10111110  //  0x1B8           bne     $1,$0,L5       
+00000000_00000000_00000000_00000000  //  0x1BC           nop                    
+00000000_00000000_00000000_00000000  //  0x1C0           nop                    
+00000000_00000000_00000000_00000000  //  0x1C4           nop                    
+00000000_00000000_00000000_00000000  //  0x1C8           nop                    
+00100100_01100011_00000000_00000001  //  0x1CC           addiu   $3,$3,1        
+00000000_00000000_00000000_00000000  //  0x1D0           nop                    
+00000000_00000000_00000000_00000000  //  0x1D4           nop                    
+00000000_00000000_00000000_00000000  //  0x1D8           nop                    
+00000000_00000000_00000000_00000000  //  0x1DC           nop                    
+00000000_01100010_00001000_00101010  //  0x1E0   L2:     slt     $1,$3,$2       
+00000000_00000000_00000000_00000000  //  0x1E4           nop                    
+00000000_00000000_00000000_00000000  //  0x1E8           nop                    
+00000000_00000000_00000000_00000000  //  0x1EC           nop                    
+00000000_00000000_00000000_00000000  //  0x1F0           nop                    
+00010100_00100000_11111111_10011011  //  0x1F4           bne     $1,$0,L6       
+00000000_00000000_00000000_00000000  //  0x1F8           nop                    
+00000000_00000000_00000000_00000000  //  0x1FC           nop                    
+00000000_00000000_00000000_00000000  //  0x200           nop                    
+00000000_00000000_00000000_00000000  //  0x204           nop                    
+00000000_00000000_00000000_00001101  //  0x208           break                  
+00000000_00000000_00000000_00000000  //  0x20C           nop                    
+00000000_00000000_00000000_00000000  //  0x210           nop                    
+00000000_00000000_00000000_00000000  //  0x214           nop                    
+00000000_00000000_00000000_00000000  //  0x218           nop                    
+00010000_00000000_11111111_11111111  //  0x21C   L7:     beq     $0,$0,L7       
+00000000_00000000_00000000_00000000  //  0x220           nop                    
+00000000_00000000_00000000_00000000  //  0x224           nop                    
+00000000_00000000_00000000_00000000  //  0x228           nop                    
+00000000_00000000_00000000_00000000  //  0x22C           nop                    
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx

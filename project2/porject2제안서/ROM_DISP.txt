@@ -1,0 +1,160 @@
+1_xxxxxxxx  // OP 000000  
+1_xxxxxxxx  // OP 000001  
+1_xxxxxxxx  // OP 000010  j
+1_xxxxxxxx  // OP 000011  jal
+1_xxxxxxxx  // OP 000100  beq
+1_xxxxxxxx  // OP 000101  bne
+1_xxxxxxxx  // OP 000110  blez
+1_xxxxxxxx  // OP 000111  bgtz
+1_xxxxxxxx  // OP 001000  addi
+1_xxxxxxxx  // OP 001001  addiu
+1_xxxxxxxx  // OP 001010  slti
+1_xxxxxxxx  // OP 001011  sltiu
+1_xxxxxxxx  // OP 001100  andi
+1_xxxxxxxx  // OP 001101  ori
+1_xxxxxxxx  // OP 001110  xori
+1_xxxxxxxx  // OP 001111  lui
+1_xxxxxxxx  // OP 010000 
+1_xxxxxxxx  // OP 010001 
+1_xxxxxxxx  // OP 010010 
+1_xxxxxxxx  // OP 010011 
+1_xxxxxxxx  // OP 010100 
+1_xxxxxxxx  // OP 010101 
+1_xxxxxxxx  // OP 010110 
+1_xxxxxxxx  // OP 010111 
+1_xxxxxxxx  // OP 011000 
+1_xxxxxxxx  // OP 011001 
+1_xxxxxxxx  // OP 011010 
+1_xxxxxxxx  // OP 011011 
+1_xxxxxxxx  // OP 011100 
+1_xxxxxxxx  // OP 011101 
+1_xxxxxxxx  // OP 011110 
+1_xxxxxxxx  // OP 011111 
+1_xxxxxxxx  // OP 100000  lb
+1_xxxxxxxx  // OP 100001  lh
+1_xxxxxxxx  // OP 100010  
+1_xxxxxxxx  // OP 100011  lw
+1_xxxxxxxx  // OP 100100  lbu
+1_xxxxxxxx  // OP 100101  lhu
+1_xxxxxxxx  // OP 100110 
+1_xxxxxxxx  // OP 100111 
+1_xxxxxxxx  // OP 101000  sb
+1_xxxxxxxx  // OP 101001  sh
+1_xxxxxxxx  // OP 101010  
+1_xxxxxxxx  // OP 101011  sw
+1_xxxxxxxx  // OP 101100 
+1_xxxxxxxx  // OP 101101 
+1_xxxxxxxx  // OP 101110 
+1_xxxxxxxx  // OP 101111 
+1_xxxxxxxx  // OP 110000 
+1_xxxxxxxx  // OP 110001 
+1_xxxxxxxx  // OP 110010 
+1_xxxxxxxx  // OP 110011 
+1_xxxxxxxx  // OP 110100 
+1_xxxxxxxx  // OP 110101 
+1_xxxxxxxx  // OP 110110 
+1_xxxxxxxx  // OP 110111 
+1_xxxxxxxx  // OP 111000 
+1_xxxxxxxx  // OP 111001 
+1_xxxxxxxx  // OP 111010 
+1_xxxxxxxx  // OP 111011 
+1_xxxxxxxx  // OP 111100 
+1_xxxxxxxx  // OP 111101 
+1_xxxxxxxx  // OP 111110 
+1_xxxxxxxx  // OP 111111 
+1_xxxxxxxx  // FN 000000  sll
+1_xxxxxxxx  // FN 000001 
+1_xxxxxxxx  // FN 000010  srl
+1_xxxxxxxx  // FN 000011  sra
+1_xxxxxxxx  // FN 000100  sllv
+1_xxxxxxxx  // FN 000101 
+1_xxxxxxxx  // FN 000110  srlv
+1_xxxxxxxx  // FN 000111  srav
+1_xxxxxxxx  // FN 001000  jr
+1_xxxxxxxx  // FN 001001  jalr
+1_xxxxxxxx  // FN 001010 
+1_xxxxxxxx  // FN 001011 
+1_xxxxxxxx  // FN 001100 
+1_xxxxxxxx  // FN 001101  break
+1_xxxxxxxx  // FN 001110 
+1_xxxxxxxx  // FN 001111 
+1_xxxxxxxx  // FN 010000  mfhi
+1_xxxxxxxx  // FN 010001  mthi
+1_xxxxxxxx  // FN 010010  mflo
+1_xxxxxxxx  // FN 010011  mtlo
+1_xxxxxxxx  // FN 010100 
+1_xxxxxxxx  // FN 010101 
+1_xxxxxxxx  // FN 010110 
+1_xxxxxxxx  // FN 010111 
+1_xxxxxxxx  // FN 011000  mult
+1_xxxxxxxx  // FN 011001  multu
+1_xxxxxxxx  // FN 011010  div
+1_xxxxxxxx  // FN 011011  divu
+1_xxxxxxxx  // FN 011100 
+1_xxxxxxxx  // FN 011101 
+1_xxxxxxxx  // FN 011110 
+1_xxxxxxxx  // FN 011111 
+1_xxxxxxxx  // FN 100000  add
+1_xxxxxxxx  // FN 100001  addu
+1_xxxxxxxx  // FN 100010  sub
+1_xxxxxxxx  // FN 100011  subu
+1_xxxxxxxx  // FN 100100  and
+1_xxxxxxxx  // FN 100101  or
+1_xxxxxxxx  // FN 100110  xor
+1_xxxxxxxx  // FN 100111  nor
+1_xxxxxxxx  // FN 101000 
+1_xxxxxxxx  // FN 101001 
+1_xxxxxxxx  // FN 101010  slt
+1_xxxxxxxx  // FN 101011  sltu
+1_xxxxxxxx  // FN 101100 
+1_xxxxxxxx  // FN 101101 
+1_xxxxxxxx  // FN 101110 
+1_xxxxxxxx  // FN 101111 
+1_xxxxxxxx  // FN 110000 
+1_xxxxxxxx  // FN 110001 
+1_xxxxxxxx  // FN 110010 
+1_xxxxxxxx  // FN 110011 
+1_xxxxxxxx  // FN 110100 
+1_xxxxxxxx  // FN 110101 
+1_xxxxxxxx  // FN 110110 
+1_xxxxxxxx  // FN 110111 
+1_xxxxxxxx  // FN 111000 
+1_xxxxxxxx  // FN 111001 
+1_xxxxxxxx  // FN 111010 
+1_xxxxxxxx  // FN 111011 
+1_xxxxxxxx  // FN 111100 
+1_xxxxxxxx  // FN 111101 
+1_xxxxxxxx  // FN 111110 
+1_xxxxxxxx  // FN 111111 
+1_xxxxxxxx  // RI  00000  bltz
+1_xxxxxxxx  // RI  00001  bgez
+1_xxxxxxxx  // RI  00010 
+1_xxxxxxxx  // RI  00011 
+1_xxxxxxxx  // RI  00100 
+1_xxxxxxxx  // RI  00101 
+1_xxxxxxxx  // RI  00110 
+1_xxxxxxxx  // RI  00111 
+1_xxxxxxxx  // RI  01000 
+1_xxxxxxxx  // RI  01001 
+1_xxxxxxxx  // RI  01010 
+1_xxxxxxxx  // RI  01011 
+1_xxxxxxxx  // RI  01100 
+1_xxxxxxxx  // RI  01101 
+1_xxxxxxxx  // RI  01110 
+1_xxxxxxxx  // RI  01111 
+1_xxxxxxxx  // RI  10000 
+1_xxxxxxxx  // RI  10001 
+1_xxxxxxxx  // RI  10010 
+1_xxxxxxxx  // RI  10011 
+1_xxxxxxxx  // RI  10100 
+1_xxxxxxxx  // RI  10101 
+1_xxxxxxxx  // RI  10110 
+1_xxxxxxxx  // RI  10111 
+1_xxxxxxxx  // RI  11000 
+1_xxxxxxxx  // RI  11001 
+1_xxxxxxxx  // RI  11010 
+1_xxxxxxxx  // RI  11011 
+1_xxxxxxxx  // RI  11100 
+1_xxxxxxxx  // RI  11101 
+1_xxxxxxxx  // RI  11110 
+1_xxxxxxxx  // RI  11111 

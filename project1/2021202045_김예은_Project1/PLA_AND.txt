@@ -1,0 +1,128 @@
+000000_000000_xxxxx  // 0x00 : sll  
+xxxxxx_xxxxxx_xxxxx  // 0x01 : srl  
+xxxxxx_xxxxxx_xxxxx  // 0x02 : sra  
+xxxxxx_xxxxxx_xxxxx  // 0x03 : sllv 
+xxxxxx_xxxxxx_xxxxx  // 0x04 : srlv 
+000000_000111_xxxxx  // 0x05 : srav 
+xxxxxx_xxxxxx_xxxxx  // 0x06 : jr   
+xxxxxx_xxxxxx_xxxxx  // 0x07 : jalr 
+xxxxxx_xxxxxx_xxxxx  // 0x08 : break
+xxxxxx_xxxxxx_xxxxx  // 0x09 : mfhi 
+xxxxxx_xxxxxx_xxxxx  // 0x0a : mthi 
+xxxxxx_xxxxxx_xxxxx  // 0x0b : mflo 
+xxxxxx_xxxxxx_xxxxx  // 0x0c   mtlo 
+xxxxxx_xxxxxx_xxxxx  // 0x0d   mult 
+xxxxxx_xxxxxx_xxxxx  // 0x0e   multu
+xxxxxx_xxxxxx_xxxxx  // 0x0f   div  
+xxxxxx_xxxxxx_xxxxx  // 0x10   divu 
+xxxxxx_xxxxxx_xxxxx  // 0x11   add  
+000000_100001_xxxxx  // 0x12   addu 
+xxxxxx_xxxxxx_xxxxx  // 0x13   sub  
+xxxxxx_xxxxxx_xxxxx  // 0x14   subu 
+xxxxxx_xxxxxx_xxxxx  // 0x15   and  
+000000_100101_xxxxx  // 0x16   or   
+xxxxxx_xxxxxx_xxxxx  // 0x17   xor  
+xxxxxx_xxxxxx_xxxxx  // 0x18   nor  
+xxxxxx_xxxxxx_xxxxx  // 0x19   slt  
+xxxxxx_xxxxxx_xxxxx  // 0x1a   sltu 
+xxxxxx_xxxxxx_00000  // 0x1b   bltz 
+xxxxxx_xxxxxx_xxxxx  // 0x1c   bgez 
+xxxxxx_xxxxxx_xxxxx  // 0x1d   j    
+000011_xxxxxx_xxxxx  // 0x1e   jal  
+xxxxxx_xxxxxx_xxxxx  // 0x1f   beq  
+xxxxxx_xxxxxx_xxxxx  // 0x20   bne  
+xxxxxx_xxxxxx_xxxxx  // 0x21   blez 
+xxxxxx_xxxxxx_xxxxx  // 0x22   bgtz 
+xxxxxx_xxxxxx_xxxxx  // 0x23   addi 
+001001_xxxxxx_xxxxx  // 0x24   addiu
+xxxxxx_xxxxxx_xxxxx  // 0x25   slti 
+xxxxxx_xxxxxx_xxxxx  // 0x26   sltiu
+xxxxxx_xxxxxx_xxxxx  // 0x27   andi 
+xxxxxx_xxxxxx_xxxxx  // 0x28   ori  
+001110_xxxxxx_xxxxx  // 0x29   xori 
+xxxxxx_xxxxxx_xxxxx  // 0x2a   lui  
+xxxxxx_xxxxxx_xxxxx  // 0x2b   lb   
+100001_xxxxxx_xxxxx  // 0x2c   lh   
+xxxxxx_xxxxxx_xxxxx  // 0x2d   lw   
+xxxxxx_xxxxxx_xxxxx  // 0x2e   lbu  
+xxxxxx_xxxxxx_xxxxx  // 0x2f   lhu  
+xxxxxx_xxxxxx_xxxxx  // 0x30   sb   
+101001_xxxxxx_xxxxx  // 0x31   sh   
+xxxxxx_xxxxxx_xxxxx  // 0x32   sw   
+xxxxxx_xxxxxx_xxxxx  // 0x33
+xxxxxx_xxxxxx_xxxxx  // 0x34
+xxxxxx_xxxxxx_xxxxx  // 0x35
+xxxxxx_xxxxxx_xxxxx  // 0x36
+xxxxxx_xxxxxx_xxxxx  // 0x37
+xxxxxx_xxxxxx_xxxxx  // 0x38
+xxxxxx_xxxxxx_xxxxx  // 0x39
+xxxxxx_xxxxxx_xxxxx  // 0x3a
+xxxxxx_xxxxxx_xxxxx  // 0x3b
+xxxxxx_xxxxxx_xxxxx  // 0x3c
+xxxxxx_xxxxxx_xxxxx  // 0x3d
+xxxxxx_xxxxxx_xxxxx  // 0x3e
+xxxxxx_xxxxxx_xxxxx  // 0x3f
+xxxxxx_xxxxxx_xxxxx  // 0x40
+xxxxxx_xxxxxx_xxxxx  // 0x41
+xxxxxx_xxxxxx_xxxxx  // 0x42
+xxxxxx_xxxxxx_xxxxx  // 0x43
+xxxxxx_xxxxxx_xxxxx  // 0x44
+xxxxxx_xxxxxx_xxxxx  // 0x45
+xxxxxx_xxxxxx_xxxxx  // 0x46
+xxxxxx_xxxxxx_xxxxx  // 0x47
+xxxxxx_xxxxxx_xxxxx  // 0x48
+xxxxxx_xxxxxx_xxxxx  // 0x49
+xxxxxx_xxxxxx_xxxxx  // 0x4a
+xxxxxx_xxxxxx_xxxxx  // 0x4b
+xxxxxx_xxxxxx_xxxxx  // 0x4c
+xxxxxx_xxxxxx_xxxxx  // 0x4d
+xxxxxx_xxxxxx_xxxxx  // 0x4e
+xxxxxx_xxxxxx_xxxxx  // 0x4f
+xxxxxx_xxxxxx_xxxxx  // 0x50
+xxxxxx_xxxxxx_xxxxx  // 0x51
+xxxxxx_xxxxxx_xxxxx  // 0x52
+xxxxxx_xxxxxx_xxxxx  // 0x53
+xxxxxx_xxxxxx_xxxxx  // 0x54
+xxxxxx_xxxxxx_xxxxx  // 0x55
+xxxxxx_xxxxxx_xxxxx  // 0x56
+xxxxxx_xxxxxx_xxxxx  // 0x57
+xxxxxx_xxxxxx_xxxxx  // 0x58
+xxxxxx_xxxxxx_xxxxx  // 0x59
+xxxxxx_xxxxxx_xxxxx  // 0x5a
+xxxxxx_xxxxxx_xxxxx  // 0x5b
+xxxxxx_xxxxxx_xxxxx  // 0x5c
+xxxxxx_xxxxxx_xxxxx  // 0x5d
+xxxxxx_xxxxxx_xxxxx  // 0x5e
+xxxxxx_xxxxxx_xxxxx  // 0x5f
+xxxxxx_xxxxxx_xxxxx  // 0x60
+xxxxxx_xxxxxx_xxxxx  // 0x61
+xxxxxx_xxxxxx_xxxxx  // 0x62
+xxxxxx_xxxxxx_xxxxx  // 0x63
+xxxxxx_xxxxxx_xxxxx  // 0x64
+xxxxxx_xxxxxx_xxxxx  // 0x65
+xxxxxx_xxxxxx_xxxxx  // 0x66
+xxxxxx_xxxxxx_xxxxx  // 0x67
+xxxxxx_xxxxxx_xxxxx  // 0x68
+xxxxxx_xxxxxx_xxxxx  // 0x69
+xxxxxx_xxxxxx_xxxxx  // 0x6a
+xxxxxx_xxxxxx_xxxxx  // 0x6b
+xxxxxx_xxxxxx_xxxxx  // 0x6c
+xxxxxx_xxxxxx_xxxxx  // 0x6d
+xxxxxx_xxxxxx_xxxxx  // 0x6e
+xxxxxx_xxxxxx_xxxxx  // 0x6f
+xxxxxx_xxxxxx_xxxxx  // 0x70
+xxxxxx_xxxxxx_xxxxx  // 0x71
+xxxxxx_xxxxxx_xxxxx  // 0x72
+xxxxxx_xxxxxx_xxxxx  // 0x73
+xxxxxx_xxxxxx_xxxxx  // 0x74
+xxxxxx_xxxxxx_xxxxx  // 0x75
+xxxxxx_xxxxxx_xxxxx  // 0x76
+xxxxxx_xxxxxx_xxxxx  // 0x77
+xxxxxx_xxxxxx_xxxxx  // 0x78
+xxxxxx_xxxxxx_xxxxx  // 0x79
+xxxxxx_xxxxxx_xxxxx  // 0x7a
+xxxxxx_xxxxxx_xxxxx  // 0x7b
+xxxxxx_xxxxxx_xxxxx  // 0x7c
+xxxxxx_xxxxxx_xxxxx  // 0x7d
+xxxxxx_xxxxxx_xxxxx  // 0x7e
+xxxxxx_xxxxxx_xxxxx  // 0x7f

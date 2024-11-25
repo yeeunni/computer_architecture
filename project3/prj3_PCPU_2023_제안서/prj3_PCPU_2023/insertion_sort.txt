@@ -1,0 +1,231 @@
+00111100_00000100_00000000_00000000  //  00_00     main: lui   $4, 0x0000        
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00110100_10000100_00100000_00000000  //  00_00           ori   $4, $4, 0x2000    
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00110100_00000101_00000000_00010000  //  00_00           ori   $5, $0, 0x10      
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00100000_00001000_00000000_00000001  //  00_00           addi  $8, $0, 0x1       
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00010001_00000101_00000000_01011001  //  00_00     L1:   beq   $8, $5, done      
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00001000_01001000_00100000  //  00_00           add   $9, $0, $8        
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00100001_00001010_11111111_11111111  //  00_00           addi  $10, $8, -1       
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00001001_01011000_10000000  //  00_00     L2:   sll   $11, $9, 2        
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_10001011_01011000_00100000  //  00_00           add   $11, $4, $11      
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+10001101_01101100_00000000_00000000  //  00_00           lw    $12, 0($11)       
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00001010_01101000_10000000  //  00_00           sll   $13, $10, 2       
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_10001101_01101000_00100000  //  00_00           add   $13, $4, $13      
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+10001101_10101110_00000000_00000000  //  00_00           lw    $14, 0($13)       
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000001_10001110_00001000_00101010  //  00_00           slt   $1, $12, $14      
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00010000_00100000_00000000_00011101  //  00_00           beq   $1, $0, L3        
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+10101101_10101100_00000000_00000000  //  00_00           sw    $12, 0($13)       
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+10101101_01101110_00000000_00000000  //  00_00           sw    $14, 0($11)       
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00100001_00101001_11111111_11111111  //  00_00           addi  $9, $9, -1        
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00100001_00101010_11111111_11111111  //  00_00           addi  $10, $9, -1       
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000101_01000001_11111111_11000011  //  00_00           bgez  $10, L2           
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00100001_00001000_00000000_00000001  //  00_00     L3:   addi  $8, $8, 1         
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00001000_00000000_00000000_00010100  //  00_00           j L1                    
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00001101  //  00_00     done: break                   
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+00000000_00000000_00000000_00000000  //  00_00           nop                     
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
+xxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx
