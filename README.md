@@ -19,6 +19,7 @@ LATCH를 이용해 D-FF를 만들고, DFF와 adder을 이용하여 synchronous �
 <p>이 프로젝트는 MIPS 파이프라인 구조에서 발생하는 data hazard, control hazard, 그리고 그에 따른 nop 삽입 최적화 및 forwarding 기법 적용을 통해 명령어 실행 효율을 개선하는 실험이다. Assembly 코드를 분석하고 nop을 최소화하여 성능을 향상시키는 것이 목표였으며, forwarding 제어 신호를 적용해 총 사이클 수를 줄이는 데 성공하였다.</p>
 <hr/>
 <h3>Project #4 - Cache design </h3>
-<p>이번 프로젝트는 캐시 설계와 성능 분석을 다룬다. GTKWAVE를 활용해 random access와 insertion sort의 캐시 hit/miss 차이를 분석하고, 시뮬레이션을 통해 unified/split 구조, L1/L2 크기 변화, associativity, block size가 AMAT(Average Memory Access Time)에 미치는 영향을 실험하였다. 각 벤치마크에 최적의 캐시 구조를 도출하며, locality와 hit time 간의 trade-off를 고려해 캐시 성능을 최적화한다.
+<p> 첫 번째로 gtkwave 분석을 통해, random access와 insertion sort 알고리즘을 분석한다. 그 다음으로는 네 가지의 조건에 따라 cache design을 바꾸며 각 벤치마크에 대해 어떤 식으로 적용되는지, unified/split, associativity, l2의 size, block size, cache size가 AMAT에 어떤 영향을 끼치는 지 직접 벤치마크를 돌려보며 확인하는 프로젝트이다. 프로젝트를 진행하면서, IJPEG의 경우 branch 명령어가 다른 두 벤치마크에 비
+해 작은 비율로 이루어졌다는 것을 확인할 수 있었고, 각각의 data cache access 및 instruction cache access를 통해 CC1의 경우가 data cache에 가장 access를 많이하는 것을 확인할 수 있었다. 이번 프로젝트를 진행하면서 AMAT을 계산하며 은근 hit time이 영향을 많이 준다는 것을 확인할 수 있었다. 또한, branch나 loop 명령어가 하드웨어가 수행하기에 빠르지 않다는 점을 깨닫고, 코딩의 중요성을 깨달았다.
 </p>
 <hr/>
